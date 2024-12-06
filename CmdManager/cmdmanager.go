@@ -1,6 +1,8 @@
 package cmdmanager
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type CMDManager struct {
 
@@ -26,7 +28,9 @@ func (cmd CMDManager) ReadLines() ([]string, error) {
 }
 
 func (cmd CMDManager) WriteResult(data any) error {
+	
 	fmt.Println(data)
+	fmt.Println("Successfully wrote the results to cmd.")
 	return nil 
 } 
 
